@@ -39,7 +39,7 @@ public class EasyCart {
                 if(vetor[i].getId().equals(codBarras)){
                     
                     float valorParcial = 0;
-                    System.out.print(vetor[i].getDescricao() + " " + vetor[i].getValor() + " Quantidade: ");
+                    System.out.print(vetor[i].getDescricao() + " R$" + vetor[i].getValor() + " Quantidade: ");
                     int quantidade = sc.nextInt();
                     valorParcial += vetor[i].getValor() * quantidade;
                     System.out.println("valor parcial: " + valorParcial);
@@ -59,15 +59,10 @@ public class EasyCart {
 
         }
         
-        System.out.println("O valor total de suas compras é: " + valorTotal);
+        System.out.println("VALOR TOTAL DAS COMPRAS: R$" + valorTotal);
        
         sc.close();
-        
-        
-       
-        
-     
-                
-        
+          
     }
+    
 }
