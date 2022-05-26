@@ -22,20 +22,21 @@ public class Carrinho {
         float valorTotal = 0;
         
         for(Item itemCompra: compras){
+
             Produto p = itemCompra.getProduto();
             int qtd = itemCompra.getQuantidade();
             
-            System.out.print(" " + p.getDescricao());
-            System.out.print(" " + p.getValor());
+            System.out.print(p.getDescricao());
+            System.out.print(" R$" + p.getValor());
             System.out.print(" " + qtd);
-            System.out.print(" " + p.getValor()*qtd);
+            System.out.println("und " + p.getValor() * qtd + "R$");
             
-            valorTotal += p.getValor()*qtd;
+            valorTotal += p.getValor() * qtd;
             
-            System.out.println("--------------------------------------");
+            System.out.println("--------------------------------------------");
             
         }
             
-            System.out.println("Valor Total: " + valorTotal);
+            System.out.println("VALOR TOTAL: R$" + valorTotal);
     }
 }
